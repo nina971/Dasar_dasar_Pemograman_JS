@@ -1,4 +1,4 @@
-var penumpang = ['Nina Fani', undefined, 'Mita'];
+var penumpang = [];
 var tambahPenumpang = function(namaPenumpang, penumpang) {
     //jika isi array kosong
     if (penumpang.length == 0) {
