@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Attribute JS</title>
+</head>
+
+<body>
+    <button type="button" id="myButton">click me</button>
+    <a href="#" id="myLink">Google</a>
+    <script>
+        var link = document.getElementById("myLink");
+        var button = document.getElementById("myButton");
+        button.setAttribute("class", "click-btn");
+        button.setAttribute("disabled", "");
+        //link.setAttribute("href", "https://www.google.com");
+        link.removeAttribute("href");
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menambahkan Elemen Baru ke DOM</title>
+</head>
+
+<body>
+    <!-- beforebegin -->
+    <div id="main">
+        <!-- afterbegin -->
+        <h1 id="title">Hello World!</h1>
+        <p id="hint">This is a simple paragraph.</p>
+        <!-- beforend -->
+    </div>
+    <!-- afterend -->
+    <button type="button" onclick="removeElement()">Insert content</button>
+    <script>
+        // function replaceParagraph() {
+        //     var parentElem = document.getElementById("main");
+        //     var oldPara = document.getElementById("hint")
+
+        //     var newPara = document.createElement("p");
+        //     var newContent = document.createTextNode("This is new Car");
+
+        //     newPara.appendChild(newContent);
+
+        //     parentElem.replaceChild(newPara, oldPara);
+        // }
+        function removeElement() {
+            var childElem = document.getElementById("hint");
+
+            childElem.parentNode.removeChild(childElem);
+        }
+    </script>
+</body>
+
+</html>

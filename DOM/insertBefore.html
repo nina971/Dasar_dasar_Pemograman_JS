@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menambahkan Elemen Baru ke DOM</title>
+</head>
+
+<body>
+    <div id="main">
+        <h1 id="title">Hello World!</h1>
+        <p id="hint">This is a paragraph.</p>
+    </div>
+    <script>
+        var newDiv = document.createElement("div");
+
+        var newContent = document.createTextNode("Hi, How are you?");
+
+        newDiv.appendChild(newContent);
+
+        var currentDiv = document.getElementById("main");
+        document.body.insertBefore(newDiv);
+    </script>
+</body>
+
+</html>

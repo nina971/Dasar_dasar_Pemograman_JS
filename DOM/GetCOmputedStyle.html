@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Get COmputed Style</title>
+    <style type="text/css">
+        #intro {
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="intro" style="color: red; font-size: 20px;">Ini adalah paragraf</p>
+    <p>ini paragraf lain</p>
+    <script>
+        var elem = document.getElementById("intro");
+        var styles = window.getComputedStyle(elem);
+        alert(styles.getPropertyValue("color"));
+        alert(styles.getPropertyValue("font-size"));
+        alert(styles.getPropertyValue("font-weight"));
+        alert(styles.getPropertyValue("font-style"));
+    </script>
+</body>
+
+</html>

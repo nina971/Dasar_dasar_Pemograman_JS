@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menambahkan Elemen Baru ke DOM</title>
+</head>
+
+<body>
+    <!-- beforebegin -->
+    <div id="main">
+        <!-- afterbegin -->
+        <h1 id="title">Hello World!</h1>
+        <!-- beforend -->
+    </div>
+    <!-- afterend -->
+    <button type="button" onclick="insertContent()">Insert content</button>
+    <script>
+        function insertContent() {
+            var mainDiv = document.getElementById("main");
+
+            mainDiv.insertAdjacentHTML('beforebegin', '<p>This is paragraph one.</p>');
+            mainDiv.insertAdjacentHTML('afterbegin', '<p>This is paragraph two.</p>');
+            mainDiv.insertAdjacentHTML('beforeend', '<p>This is paragraph three.</p>');
+            mainDiv.insertAdjacentHTML('afterend', '<p>This is paragraph four.</p>');
+        }
+    </script>
+</body>
+
+</html>

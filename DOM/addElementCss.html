@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add or Replace CSS clases</title>
+    <style>
+        .hightlight {
+            background: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="info" class="disabled">Something Very important!</div>
+    <script>
+        var elem = document.getElementById("info");
+        elem.className = "note";
+        elem.className += "hightlight";
+    </script>
+</body>
+
+</html>
